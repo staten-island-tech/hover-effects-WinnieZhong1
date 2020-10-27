@@ -1,0 +1,27 @@
+@import "./variables";
+.manhwa-parent {
+  width: 60rem;
+  height: 40rem;
+}
+.manhwa-gallery {
+  margin: 3rem;
+  position: relative;
+}
+.manhwa-photo {
+  position: absolute;
+  height: 20rem;
+  box-shadow: 0 1.5rem 1rem rgba(0, 0, 0, 0.4);
+
+  transition: all 0.3s;
+}
+.manhwa-photo-1 {
+  top: 10rem;
+  left: 15%;
+}
+.manhwa-photo-2 {
+  top: 2rem;
+  right: 0;
+}
+.manhwa-photo3 {
+  top: -2rem;
+  left: 0;

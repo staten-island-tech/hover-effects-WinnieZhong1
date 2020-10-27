@@ -1,0 +1,10 @@
+{
+    "version": 3,
+    "mappings": "ACAA,AAAA,IAAI;AACJ,IAAI,CAAC;EACH,SAAS,EAAE,KAAK;EAChB,OAAO,EAAE,CAAC;EACV,MAAM,EAAE,CAAC;EACT,UAAU,EAAE,UAAU;CACvB;;ADJD,AAAA,IAAI,CAAC;EACH,MAAM,EAAE,KAAK;EACb,UAAU,EAAE,QAAQ;EACpB,aAAa,EAAE,GAAG;CACnB",
+    "sources": [
+        "dog.scss",
+        "_variables.scss"
+    ],
+    "names": [],
+    "file": "dog.css"
+}

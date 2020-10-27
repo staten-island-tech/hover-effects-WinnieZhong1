@@ -1,0 +1,16 @@
+html,
+body {
+  font-size: 62.5%;
+  padding: 0;
+  margin: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.dog {
+  height: 20rem;
+  -webkit-transition: all 0.3%;
+  transition: all 0.3%;
+  border-radius: 50%;
+}
+/*# sourceMappingURL=dog.css.map */

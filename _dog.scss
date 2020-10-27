@@ -1,0 +1,12 @@
+@import "_variables.scss";
+
+.dog {
+  height: 20rem;
+  transition: all 0.3%;
+  border-radius: 50%;
+}
+.dog:hover {
+  border-radius: 0;
+  filter: brightness(125%);
+  transform: scale(1.3);
+}
