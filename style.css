@@ -126,6 +126,44 @@ body {
   letter-spacing: 3rem;
 }
 
+html,
+body {
+  font-size: 62.5%;
+  padding: 0;
+  margin: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.manhwa-parent {
+  width: 60rem;
+  height: 40rem;
+}
+
+.manhwa-photo {
+  position: relative;
+  height: 20rem;
+  -webkit-box-shadow: rgba(0, 0, 0, 0.4);
+          box-shadow: rgba(0, 0, 0, 0.4);
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+  margin: 3rem;
+}
+
+.manhwa-photo:hover {
+  -webkit-transform: scale(1.3);
+          transform: scale(1.3);
+  -webkit-box-shadow: 0.3rem 1rem rgba(0, 0, 0, 0.4);
+          box-shadow: 0.3rem 1rem rgba(0, 0, 0, 0.4);
+  outline: 1rem solid #f8bbd0;
+  z-index: 2;
+}
+
+.manhwa-photo {
+  top: 10rem;
+  left: 15%;
+}
+
 .container {
   width: 80vw;
   margin: 2rem auto;
