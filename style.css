@@ -44,37 +44,22 @@ body {
 .btn:hover {
   -webkit-transform: translateY(-2px);
           transform: translateY(-2px);
-  -webkit-box-shadow: 0 10px 0.5rem rgba(0, 0, 0, 0.1);
-          box-shadow: 0 10px 0.5rem rgba(0, 0, 0, 0.1);
+  -webkit-box-shadow: 0 10px 0.5rem rgba(0, 0, 0, 0.6);
+          box-shadow: 0 10px 0.5rem rgba(0, 0, 0, 0.6);
 }
 
 .btn::after {
-  content: "";
-  display: inline-block;
   height: 100%;
   width: 100%;
   border-radius: 10rem;
   position: absolute;
   top: 0;
   left: 0;
-  z-index: -1;
-  -webkit-transition: all 0.3s;
-  transition: all 0.3s;
-}
-
-.btn:hover::after {
-  -webkit-transform: scaleX(1.5) scaleY(1.6);
-          transform: scaleX(1.5) scaleY(1.6);
-  opacity: 0;
 }
 
 .btn:active {
-  -webkit-transform: translateY(-1px);
-          transform: translateY(-1px);
-  -webkit-transform: scaleX(1.5) scaleY(1.6);
-          transform: scaleX(1.5) scaleY(1.6);
-  -webkit-box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.2);
-          box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.2);
+  -webkit-transform: scaleX(1.2) scaleY(1.3);
+          transform: scaleX(1.2) scaleY(1.3);
 }
 
 html,
@@ -110,20 +95,38 @@ body {
           box-sizing: border-box;
 }
 
-.text-effect {
-  background-image: url("./media/anime.jpg");
-  background-position: center;
-  color: transparent;
-  font-size: 8rem;
-  -webkit-background-clip: text;
+.fade,
+.fade:link,
+.fade:visited {
+  text-transform: uppercase;
+  text-decoration: none;
+  padding: 1.5rem 4rem;
+  background-color: #f8bbd0;
+  margin: 1rem auto;
+  font-size: 2rem;
+  border-radius: 10rem;
   -webkit-transition: all 0.3s;
   transition: all 0.3s;
+  position: relative;
+  color: #fff;
 }
 
-.text-effect:hover {
-  -webkit-transform: skewY(-10deg);
-          transform: skewY(-10deg);
-  letter-spacing: 3rem;
+.fade-pink {
+  background-color: #f8bbd0;
+  color: #fff;
+}
+
+.fade-pink::after {
+  background-color: #f8bbd0;
+  color: #fff;
+}
+
+.fade {
+  opacity: 0.55;
+}
+
+.fade:hover {
+  opacity: 1;
 }
 
 html,
@@ -141,13 +144,14 @@ body {
 }
 
 .manhwa-photo {
-  position: relative;
   height: 20rem;
   -webkit-box-shadow: rgba(0, 0, 0, 0.4);
           box-shadow: rgba(0, 0, 0, 0.4);
   -webkit-transition: 0.3s;
   transition: 0.3s;
   margin: 3rem;
+  top: 10rem;
+  left: 15%;
 }
 
 .manhwa-photo:hover {
@@ -159,9 +163,50 @@ body {
   z-index: 2;
 }
 
-.manhwa-photo {
-  top: 10rem;
-  left: 15%;
+html,
+body {
+  font-size: 62.5%;
+  padding: 0;
+  margin: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.shoujo {
+  height: 30rem;
+  position: relative;
+}
+
+.shoujo-pic {
+  height: 30rem;
+  -webkit-clip-path: circle();
+          clip-path: circle();
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+}
+
+.shoujo-header {
+  font-size: 3rem;
+  opacity: 0;
+  color: white;
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+  text-transform: uppercase;
+}
+
+.shoujo:hover .shoujo-pic {
+  -webkit-filter: grayscale(90%);
+          filter: grayscale(90%);
+}
+
+.shoujo:hover .shoujo-header {
+  opacity: 1;
+  top: 50%;
 }
 
 .container {
